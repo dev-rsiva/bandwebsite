@@ -1,0 +1,337 @@
+*{
+    margin:0px;
+    Padding:0px;
+    box-sizing: border-box;
+}
+
+
+header{
+     height: 100vh;
+     background-image: url(https://www.w3schools.com/w3images/la.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    background-position: center;
+    width: auto;  
+}
+
+
+.header-content{
+    background-color: black;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    margin:auto;
+    padding: 0px;
+    padding-right: 35px;
+    position: fixed;
+}
+
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 420px;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+nav ul li{
+    padding: 10px 20px;
+    }
+
+
+nav ul li:hover{
+    color:black;
+    background-color: gray;
+    padding: 10px 20px;  
+}
+
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    }
+
+
+#icons{
+    display:flex;
+}
+
+
+.fa-magnifying-glass{
+    color:white;
+}
+
+
+.fa-bars{
+    color:white;
+}
+
+
+.search :hover{
+    padding:14.5px;
+    background-color: red;
+    display:block;
+   }
+
+
+.burger{
+    display:none;
+}
+
+
+.caption{
+    color:white;
+    position: absolute;
+    top:90%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    z-index: 1000;
+    text-align: center;
+    line-height: 1.5;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+
+.band{
+    background-color: white;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.band .content{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+
+.band .content .band-title{
+    padding:15px 0px;
+}
+
+
+.band .content .band-caption{
+    font-style: italic;
+    padding:15px 0px;
+}
+
+
+.band .content .band-description{
+    padding:15px 300px;
+    text-align: center;
+}
+
+
+
+
+.box-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box-container .box img{
+    width:80%;
+    height:auto;
+    }
+
+
+.box-container .box p{
+    text-align: center;
+    padding:20px 0px;
+    }
+
+
+.tour-dates{
+    min-height: 100vh;
+    background-color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.tour-dates .content h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 100;
+    padding-top:80px;
+    padding-bottom: 10px;
+}
+
+
+.tour-dates .content p{
+    color: gray;
+    font-style: italic;
+    text-align: center;
+    padding: 15px 0px;
+    padding-bottom: 40px;
+}
+
+
+.table{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 22%;
+}
+.table ul{
+    color:#7575A0;
+    background-color: white;
+    width:100%;
+    padding: 0px 15px;
+    margin:0px 15px;
+    list-style-type: none;    
+}
+
+
+.table ul li{
+    padding:10px;
+}
+
+
+.table ul li span {
+    color: white;
+    background-color: #F44336;
+    padding:5px 5px;
+    margin-left: 20px;
+   
+}
+
+
+.table ul li:last-child span{
+    float: right!important;
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin:0px;
+    padding:5px 10px;
+    border-radius: 50%;
+    transform: translateY(-20%);
+}
+
+
+.box-container-locations{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 20px 0px;
+   
+   
+}
+
+
+.box-location-1 img{
+    width: 230px;
+    height:auto;
+}
+
+
+.box-location-1{
+    background-color: white;
+    color:black;
+    border: #F44336;
+    margin:0px 18px;
+    width:230px;
+    }
+
+
+.date{
+    color: grey;
+    font-weight: 100;
+}
+.button1{
+    color: white;
+    background-color: black;
+    padding:10px;
+    border-radius: 5px;
+}
+
+
+.box-content{
+    padding:15px;
+}
+
+
+.box-content h3,p,button{
+    padding:8px 0px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+
+    nav ul{
+        width:auto;
+        flex-direction: column;    
+    }
+
+
+    .search{
+    display:none;
+    }
+
+
+    .burger{
+    display:block;
+    cursor:pointer;
+    position: absolute;
+    top:20px;
+    right:20px;
+    }
+
+
+   nav ul li:hover{
+    color:black;
+    background-color: gray;
+    padding:10px 20px;
+    padding-right:100vw;
+    }    
+
+
+    .band .content .band-description{
+    padding:10px 20px;
+    text-align: center;
+    }
+
+
+    .box-container .box img{
+    width:100%;
+    height:auto;
+    }
+
+
+    .table{
+    padding: 0px 5%;
+    }
+
+
+    .box-container-locations{
+    width:100%;
+    }
+
+
+.box-location-1{
+    width:100%;
+    }
+
+
+
+
+}
+
+
+
+
